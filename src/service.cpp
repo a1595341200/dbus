@@ -24,12 +24,20 @@ DBusConnection *init_bus() {
   //为连接设置一个bus name: bus_name;
   // param 1: 连接描述符
   // param 2: 请求bus要分配的bus name(逻辑上讲，bus
+<<<<<<< HEAD
   // name可以是任何字符串，只要符合命名规则)
   // param 3:　
   // flags={DBUS_NAME_FLAG_REPLACE_EXISTING,
   //        DBUS_NAME_FLAG_ALLOW_REPLACEMENT,
   //			  DBUS_NAME_FLAG_DO_NOT_QUEUE
   //       }
+=======
+  // name可以是任何字符串，只要符合命名规则) param 3:　flags
+  // ={DBUS_NAME_FLAG_REPLACE_EXISTING,
+  // DBUS_NAME_FLAG_ALLOW_REPLACEMENT,
+  //					DBUS_NAME_FLAG_DO_NOT_QUEUE
+  //					 }
+>>>>>>> 58e06b85287ce4119f44bd780328422e96bd3925
   // param 4: err info
   ret = dbus_bus_request_name(connection, "hello.world.service",
                               DBUS_NAME_FLAG_REPLACE_EXISTING, &err);
